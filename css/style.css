@@ -1,6 +1,141 @@
 /*RESET*/
-*{
+
+:root {
+    --orange: #F97200;
+    --green: #A0C16C;
+    -green2:#172205;
+}
+
+* {
     padding: 0px;
     margin: 0px;
-    font-family: "sans-serif";
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.2s;
+}
+
+.yappleName {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 30px
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+main {
+    height: 86vh
+}
+header{
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(176deg, white, #ffffff99);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(10px);
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:2px 25px 2px 25px;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+  
+}
+.right {
+    justify-content: right;
+  
+}
+
+.gap10{
+    gap:10px;
+}
+.gap5{
+    gap:5px;
+}
+.gap20{
+    gap:20px;
+}
+.padding5{padding-top:5px;padding-bottom:5px}
+
+.padding15{padding-top:15px;padding-bottom:15px}
+
+.padding0{
+    padding:0px
+}
+.spaceBt{
+    justify-content: space-between;
+}
+
+footer {
+    background-color: rgb(0, 14, 13);
+    color: rgb(207, 207, 207);
+    padding: 15px;
+    padding-left: 25px;
+
+}
+
+.button{
+    border-radius: 5px;
+    background: var(--orange);
+    color: white;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    padding: 5px;
+    text-decoration: none;
+    
+}
+.button:hover,.secondary:hover{
+    cursor: pointer;   
+    box-shadow: 1px 1px  4px rgba(0, 0, 0, 0.301); 
+    transition: 0.4s;
+}
+
+.secondary{
+    background: white;
+    color: var(--orange);
+    border: 1px solid #f970004d;
+    text-decoration: none;
+}
+
+.bg_black{
+    display: inline;
+    color: rgb(255, 255, 255);
+    background-color:black;
+    padding: 5px;
+}
+.bg_orange{
+    background-color:var(--orange);
+    padding-left: 65px;
+}
+.bg_green{
+    background-color:var(--green);
+}
+.bg_white{
+    background-color:white;
+    color: var(--green2);
+}
+
+.banner{
+    background-image: url("../images/banner.jpg");
+    padding:70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -70px 155px 8px #000000;
+}
+.banneTitle{
+    font-size:40px;
+    color:white;
 }
