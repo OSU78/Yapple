@@ -12,50 +12,87 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Yapple</title>
+		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
 	</head>
 	<body>
-		<header class="flex spaceBt padding5">
-			<section class="flex center gap5">
+		<header>
+			<section class="flex">
 				<h3 class="yappleName">Yapple</h3>
-				<img src="images/icone/yapplelogo.png" alt="" width="35px">
+				<img src="images/icone/yapplelogo.webp" alt="" loading="lazy" width="35px">
 			</section>
-			<section class="flex center padding0">
-			<section class="flex center gap10 padding0">
-				<a class="button" href="">SUR PLACE</a>
-				<a class="button secondary" href="">LIVRAISON</a>
+			<section class="flex padding0">
+				<section class="type_commande flex">
+					<a class="button" href="">SUR PLACE</a>
+					<a class="button livraison" href="">LIVRAISON</a>
+				</section>
+				<section class="flex ">
+					<div class="panier flex padding0">
+						<img src="images/icone/panier.webp" alt="" loading="lazy" width="35px" srcset="images/icone/panier-50.webp 320w,
+																					             images/icone/panier-50.webp  640w">
+						<p class="panier_compteur">1</p>
+					</div>
+					<div class="piece flex ">
+						<img src="images/icone/piece.webp" alt="piece" width="35px">
+						<p>255</p>
+					</div>
+				</section>
 			</section>
-			<section class="flex center">
-				<div class="panier flex center gap5 padding0">
-					<img src="images/icone/panier.png" alt="" width="35px">
-					<p>Panier</p>
-				</div>
-				<div class="flex center gap5 ">
-					<img src="images/icone/piece.png" alt="piece" width="35px">
-					<p>255</p>
-				</div>
-			</section>
-			</section>
-			
+
 		</header>
 
 		<main>
-		<section class="banner flex left row">
-		<h1 class="banneTitle">Bon appétit</h1>
-		</section>
-			<section class="flex center row gap20 padding15">
-			<div class="button bg_green">Boulangerie</div>
-			<div class="button bg_white">Apéro</div>
-			<div class="button bg_white">Boisson</div>
+			<section class="banner">
+				<h1 class="banner_title">Bon appétit !</h1>
+			</section>
+			<section class="section_categorie">
+				<div class="button_secondaire bg_green">Boulangerie</div>
+				<div class="button2">Apéro</div>
+				<div class="button2">Boisson</div>
 			</section>
 			<section>
-				<div class="flex center row"></div>
-				<div class="bg_orange flex spaceBt">
-				<h3 class="bg_black">Manger sain avec l’aplication Yapple ! </h3>
-				<img src="images/appIos.png" alt="app ios" width="250px">
+				<div class="recettes">
+
+					<div class="recette">
+					<img class="recette_image" src="images/cookies.webp" alt="cookie" width="120px">
+						
+						<div>
+							<p class="recette_prix">3.55 €</p>
+							<p class="recette_nom">Cookies</p>
+						</div>
+					</div>
+					<div class="recette">
+					<img class="recette_image" src="images/p4.webp" alt="Poisson viande" width="120px">
+						
+						<div>
+							<p class="recette_prix">3.55 €</p>
+							<p class="recette_nom">Poission viandes</p>
+						</div>
+					</div>
+						<div class="recette">
+					<img class="recette_image" src="images/p2.webp" alt="cookie" width="120px">
+						
+						<div>
+							<p class="recette_prix">3.55 €</p>
+							<p class="recette_nom">Cookies</p>
+						</div>
+					</div>
+						<div class="recette">
+					<img class="recette_image" src="images/p1.webp" alt="cookie" width="120px">
+						
+						<div>
+							<p class="recette_prix">8.55 €</p>
+							<p class="recette_nom">Cookies</p>
+						</div>
+					</div>
+				</div>
+				<div class="flex section_pub_app">
+					<h3 class="phrase_acrroche">Manger sain avec l’aplication Yapple !
+					</h3>
+					<img src="images/appIos.webp" alt="app ios" width="250px">
 				</div>
 			</section>
 		</main>

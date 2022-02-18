@@ -1,9 +1,31 @@
-/*RESET*/
+/*FONT CSS*/
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat/Montserrat-Regular.woff2");
+    src: url("../font/Montserrat/Montserrat-Regular.woff");
+
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat/Montserrat-re.woff2");
+    src: url("../font/Montserrat/Montserrat-Bold.woff");
+    font-weight: regular;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../font/Montserrat/Montserrat-Bold.woff2");
+    src: url("../font/Montserrat/Montserrat-Bold.woff");
+    font-weight: bold;
+}
+
+/*---------- */
 
 :root {
     --orange: #F97200;
     --green: #A0C16C;
-    -green2:#172205;
+    -green2: #172205;
 }
 
 * {
@@ -13,70 +35,39 @@
     transition: all 0.2s;
 }
 
-.yappleName {
-    color: var(--orange);
-    font-weight: bold;
-    font-size: 30px
-}
+
 
 body {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    font-family: "Montserrat";
 }
 
+
+
+/*MOBILE*/
+
 main {
-    height: 86vh
+    display: flex;
+    flex-flow: column;
+    min-height: 95vh;
 }
-header{
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px 5px 2px 5px;
+    justify-content: space-between;
+    gap: 5px;
     position: fixed;
     width: 100%;
     background: linear-gradient(176deg, white, #ffffff99);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(10px);
-}
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding:2px 25px 2px 25px;
-}
 
-.row {
-    flex-direction: row;
-}
-
-.column {
-    flex-direction: column;
-}
-
-.center {
-    justify-content: center;
-  
-}
-.right {
-    justify-content: right;
-  
-}
-
-.gap10{
-    gap:10px;
-}
-.gap5{
-    gap:5px;
-}
-.gap20{
-    gap:20px;
-}
-.padding5{padding-top:5px;padding-bottom:5px}
-
-.padding15{padding-top:15px;padding-bottom:15px}
-
-.padding0{
-    padding:0px
-}
-.spaceBt{
-    justify-content: space-between;
 }
 
 footer {
@@ -87,7 +78,97 @@ footer {
 
 }
 
-.button{
+.yappleName {
+    color: var(--orange);
+    font-weight: bold;
+    font-size: 18px
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2px 5px 2px 5px;
+    justify-content: center;
+    gap: 5px
+}
+
+.space_b {
+    justify-content: space-between;
+}
+
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+.right {
+    justify-content: right;
+
+}
+
+.section_categorie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px;
+    justify-content: flex-start;
+    margin-bottom: 25px;
+}
+
+.padding5 {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+.padding15 {
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.padding0 {
+    padding: 0px !important;
+}
+
+
+
+.bg_green {
+    background-color: var(--green);
+}
+
+
+.button_secondaire {
+    border-radius: 5px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    padding: 5px;
+    text-decoration: none;
+    background-color: var(--green);
+    color: white;
+}
+
+.button2 {
+    border-radius: 5px;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.445);
+    padding: 5px;
+    text-decoration: none;
+    background-color: white;
+    color: var(--green2);
+    border: 1px solid rgba(8, 56, 26, 0.103)
+}
+
+
+
+
+.button {
     border-radius: 5px;
     background: var(--orange);
     color: white;
@@ -95,47 +176,202 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.445);
     padding: 5px;
     text-decoration: none;
-    
+
+
 }
-.button:hover,.secondary:hover{
-    cursor: pointer;   
-    box-shadow: 1px 1px  4px rgba(0, 0, 0, 0.301); 
+
+.button:hover,
+.livraison:hover,
+.button2:hover,
+.button_secondaire:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.301);
     transition: 0.4s;
 }
 
-.secondary{
+.livraison {
     background: white;
     color: var(--orange);
     border: 1px solid #f970004d;
     text-decoration: none;
 }
 
-.bg_black{
-    display: inline;
-    color: rgb(255, 255, 255);
-    background-color:black;
-    padding: 5px;
-}
-.bg_orange{
-    background-color:var(--orange);
-    padding-left: 65px;
-}
-.bg_green{
-    background-color:var(--green);
-}
-.bg_white{
-    background-color:white;
-    color: var(--green2);
+.panier {
+    gap: 5px;
 }
 
-.banner{
-    background-image: url("../images/banner.jpg");
-    padding:70px;
+.panier_compteur {
+    padding: 5px;
+    background: white;
+    border-radius: 88px;
+    color: var(--green2);
+    position: relative;
+    top: 0;
+    left: -15px;
+    width: 10px;
+    justify-content: center;
+    display: flex;
+    height: 10px;
+    border: 1px solid transparent;
+    font-size: 12px;
+}
+
+.panier_compteur:hover {
+    cursor: pointer;
+    background: var(--orange);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+}
+
+.phrase_acrroche {
+    display: inline;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding: 5px;
+
+
+}
+
+.section_pub_app {
+    display: none;
+
+}
+
+
+
+
+.banner {
+    background-image: url("../images/banner20.webp");
+    padding: 70px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    justify-content: flex-start;
     background-size: cover;
     background-repeat: no-repeat;
+    font-weight: bold;
     box-shadow: inset 0px -70px 155px 8px #000000;
 }
-.banneTitle{
-    font-size:40px;
-    color:white;
+
+.type_commande {
+
+    display: none;
+}
+
+.banner_title {
+    font-size: 20px;
+    color: white;
+}
+
+
+.recettes {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.recette {
+    max-width: 120px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #5f5f5f2f;
+    margin-bottom: 15px;
+}
+
+.recette ::after {
+    left: 70%;
+    content: "+";
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    background: #a0c16c;
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: -15px;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+
+}
+
+.recette:hover ::after {
+    border: 1px solid white;
+    box-shadow: 1px 2px 8px #0000001c;
+    transition: all 0.3s;
+}
+
+.recette:hover {
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.089);
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+
+.recette_prix {
+    padding: 10px;
+    border-top: 1px solid #89888869;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.recette_nom {
+    padding: 10px;
+
+}
+
+
+@media(min-width: 789px) {
+    .flex {
+        padding: 2px 25px 2px 25px;
+        justify-content: center;
+    }
+
+    .banner {
+        padding-top: 100px;
+    }
+
+    .banner_title {
+        font-size: 35px;
+    }
+
+    .type_commande {
+        display: flex;
+        gap: 10px;
+        padding: 0px
+    }
+
+    .yappleName {
+        font-size: 30px
+    }
+
+    .phrase_acrroche{
+        margin-top: 10px;
+        font-size: 35px;
+    }
+    .section_pub_app {
+        display: flex;
+        background-color: var(--orange);
+        padding-left: 65px;
+        justify-content: center;
+    }
+
+    .section_categorie {
+
+        padding-left: 65px;
+
+    }
+
+    .recettes{
+        margin-left : 65px
+    }
 }
