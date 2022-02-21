@@ -19,10 +19,17 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<!---->
 		<header>
 			<section class="flex">
 				<h3 class="yappleName">Yapple</h3>
-				<img src="images/logo.webp" alt="logo" loading="lazy" width="35px">
+				<!--SVG logo yapple-->
+				<svg width="37" height="32" viewbox="0 0 37 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M36 1.05287C31.4061 9.32187 27.731 14.3752 18.5432 18.5097C19.462 15.7533 20.0745 13.9158 21.2996 12.0782C23.1371 9.32187 24.2471 8.18755 25.8934 6.56553C30.028 3.3498 31.4061 2.43103 36 1.05287Z" fill="#A0C16C"/>
+					<path d="M34.2529 7.48434C35.2613 10.2631 35.4941 13.5757 35.0812 16.6721C34.2119 23.1919 30.9467 28.6163 24.9746 30.4538C22.1467 31.324 21.041 28.5177 18.0839 28.6163C15.1267 28.7148 14.4086 30.9132 12.1117 30.4538C8.26283 29.684 5.00152 27.059 2.92401 22.6442C-0.75105 14.8345 0.626943 2.43106 8.89608 1.05288C12.5261 0.44789 14.4154 5.24398 18.5432 4.728C22.2183 4.26862 22.6777 0.593497 26.8123 1.05288C28.024 1.18751 29.0933 1.54338 30.0279 2.07591" stroke="#F97200" stroke-width="2"/>
+				</svg>
+
+
 			</section>
 			<section class="flex padding0">
 				<section class="type_commande flex">
@@ -30,12 +37,16 @@
 					<a class="button livraison" href="#">LIVRAISON</a>
 				</section>
 				<section class="flex ">
-					<div class="panier flex padding0">
-						<img src="images/icone/panier.webp" alt="panier" loading="lazy" width="35px">
+					<div
+						class="panier flex padding0">
+						<!--SVG panier icon-->
+						<svg width="35" height="32" viewbox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M35 13.125V14.0972C35 14.9027 34.3471 15.5556 33.5417 15.5556H33.0556L31.4688 26.6625C31.2636 28.0994 30.033 29.1667 28.5815 29.1667H6.41849C4.96702 29.1667 3.73643 28.0994 3.53111 26.6625L1.94444 15.5556H1.45833C0.652908 15.5556 0 14.9027 0 14.0972V13.125C0 12.3196 0.652908 11.6667 1.45833 11.6667H5.55023L12.0386 2.74525C12.6702 1.87682 13.8863 1.68474 14.7548 2.31638C15.6233 2.94802 15.8153 4.16409 15.1837 5.03259L10.3588 11.6667H24.6412L19.8163 5.03253C19.1847 4.16409 19.3768 2.94796 20.2453 2.31632C21.1136 1.68468 22.3298 1.8767 22.9615 2.74519L29.4498 11.6667H33.5417C34.3471 11.6667 35 12.3196 35 13.125ZM18.9583 23.8195V17.0139C18.9583 16.2085 18.3054 15.5556 17.5 15.5556C16.6946 15.5556 16.0417 16.2085 16.0417 17.0139V23.8195C16.0417 24.6249 16.6946 25.2778 17.5 25.2778C18.3054 25.2778 18.9583 24.6249 18.9583 23.8195ZM25.7639 23.8195V17.0139C25.7639 16.2085 25.111 15.5556 24.3056 15.5556C23.5001 15.5556 22.8472 16.2085 22.8472 17.0139V23.8195C22.8472 24.6249 23.5001 25.2778 24.3056 25.2778C25.111 25.2778 25.7639 24.6249 25.7639 23.8195ZM12.1528 23.8195V17.0139C12.1528 16.2085 11.4999 15.5556 10.6944 15.5556C9.88902 15.5556 9.23611 16.2085 9.23611 17.0139V23.8195C9.23611 24.6249 9.88902 25.2778 10.6944 25.2778C11.4999 25.2778 12.1528 24.6249 12.1528 23.8195Z" fill="#F97200"/>
+						</svg>
 						<p class="panier_compteur">1</p>
 					</div>
 					<div class="piece flex ">
-						<img src="images/icone/piece.webp" loading="lazy" alt="piece" width="35px">
+						<img src="images/icone/piece.webp" loading="lazy" alt="piece">
 						<p>255</p>
 					</div>
 				</section>
@@ -56,7 +67,15 @@
 				<div class="recettes">
 
 					<div class="recette">
-						<img class="recette_image" loading="lazy" src="images/cookies.webp" alt="cookie" width="120px">
+						<img class="recette_image" loading="lazy" src="images/croissant.webp" width="238px" height="135px" alt="Croissant">
+
+						<div>
+							<p class="recette_prix">0.99 €</p>
+							<p class="recette_nom">Croissant</p>
+						</div>
+					</div>
+					<div class="recette">
+						<img class="recette_image" loading="lazy" src="images/cookie.webp" width="238px" height="135px" alt="cookie">
 
 						<div>
 							<p class="recette_prix">3.55 €</p>
@@ -64,23 +83,59 @@
 						</div>
 					</div>
 					<div class="recette">
-						<img class="recette_image" loading="lazy" src="images/p4.webp" alt="Poisson viande" width="120px">
+						<img class="recette_image" loading="lazy" src="images/vegan1.webp" width="238px" height="135px" alt="vegan">
 
 						<div>
-							<p class="recette_prix">3.55 €</p>
-							<p class="recette_nom">Poission viandes</p>
+							<p class="recette_prix">4.99 €</p>
+							<p class="recette_nom">Vegan mix</p>
 						</div>
 					</div>
 					<div class="recette">
-						<img class="recette_image" loading="lazy" src="images/p2.webp" alt="recette 2" width="120px">
+						<img class="recette_image" loading="lazy" src="images/saladeouf.webp" width="238px" height="135px" alt="salade au oeuf">
 
 						<div>
-							<p class="recette_prix">3.55 €</p>
+							<p class="recette_prix">4.00 €</p>
+							<p class="recette_nom">salade d'oeuf</p>
+						</div>
+					</div>
+					<div class="recette">
+						<img class="recette_image" loading="lazy" src="images/vegan.webp" width="238px" height="135px" alt="vegan salade" >
+
+						<div>
+							<p class="recette_prix">8.55 €</p>
+							<p class="recette_nom">Vegan salade</p>
+						</div>
+					</div>
+
+					<div class="recette">
+						<img class="recette_image" loading="lazy" src="images/plat4.webp" width="238px" height="135px" alt="recette 1" >
+
+						<div>
+							<p class="recette_prix">8.55 €</p>
 							<p class="recette_nom">Cookies</p>
 						</div>
 					</div>
+
 					<div class="recette">
-						<img class="recette_image" loading="lazy" src="images/p1.webp" alt="recette 1" width="120px">
+						<img class="recette_image" loading="lazy" src="images/cookie.webp" width="238px" height="135px" alt="cookie">
+
+						<div>
+							<p class="recette_prix">8.55 €</p>
+							<p class="recette_nom">Cookies</p>
+						</div>
+					</div>
+
+					<div class="recette">
+						<img class="recette_image" loading="lazy" src="images/brioche.webp" width="238px" height="135px" alt="Brioche nature">
+
+						<div>
+							<p class="recette_prix">8.55 €</p>
+							<p class="recette_nom">Cookies</p>
+						</div>
+					</div>
+
+					<div class="recette">
+						<img class="recette_image" loading="lazy" src="images/painepice.webp" width="238px" height="135px" alt="pain d'épice">
 
 						<div>
 							<p class="recette_prix">8.55 €</p>
