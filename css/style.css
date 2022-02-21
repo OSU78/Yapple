@@ -120,6 +120,9 @@ footer {
     justify-content: flex-start;
     margin-bottom: 25px;
 }
+.section_categorie h2{
+    display : none;
+}
 
 .padding5 {
     padding-top: 5px;
@@ -372,11 +375,14 @@ footer {
     }
 
     .section_categorie {
-
         padding-left: 65px;
+        
 
     }
-
+    
+    .section_categorie h2{
+    display : block;
+}
     .recettes {
         margin-left: 65px
     }
