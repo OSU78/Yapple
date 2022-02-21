@@ -120,8 +120,9 @@ footer {
     justify-content: flex-start;
     margin-bottom: 25px;
 }
-.section_categorie h2{
-    display : none;
+
+.section_categorie h2 {
+    display: none;
 }
 
 .padding5 {
@@ -336,9 +337,10 @@ footer {
 
 /*Tablette et PC*/
 @media(min-width: 789px) {
-    footer{
+    footer {
         display: block;
     }
+
     .flex {
         padding: 2px 25px 2px 25px;
         justify-content: center;
@@ -376,23 +378,24 @@ footer {
 
     .section_categorie {
         padding-left: 65px;
-        
+
 
     }
-    
-    .section_categorie h2{
-    display : block;
-}
+
+    .section_categorie h2 {
+        display: block;
+    }
+
     .recettes {
         margin-left: 65px
     }
 
     .recette {
-        max-width:170px;
+        max-width: 170px;
         width: 170px;
     }
 
-    .recette img{
+    .recette img {
         height: auto;
     }
 
