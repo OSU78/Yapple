@@ -155,6 +155,16 @@
 
 		<footer>Copyright@2022 by Osu78</footer>
 		<!--Realisé par Ousmane Salamatao PMD2024-->
+		<script>
+			// Initialize the agent at application startup.
+const fpPromise = import ('https://fpcdn.io/v3/J9L5HbzO1KuFjc9ZEDmt').then(FingerprintJS => FingerprintJS.load({region: 'eu'}))
+
+// Get the visitor identifier when you need it.
+fpPromise.then(fp => fp.get()).then(result => { // This is the visitor identifier:
+const visitorId = result.visitorId
+console.log(visitorId)
+})
+		</script>
 	</body>
 
 </html>
